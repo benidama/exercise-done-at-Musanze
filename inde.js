@@ -1,35 +1,14 @@
-let names = document.getElementById("name").value;
-
-const age = document.getElementById("age").value;
-
-function getHour() {
-  const hour = new Date();
-  const newHour = hour.getHours();
-  //   console.log(newHour);
-  if (newHour < 12) {
-    document.getElementById("result").innerText =
-      "Good morning " +
-      names +
-      "," +
-      "We are on " +
-      newHour +
-      " AM and You're Approaching to the SunSet.";
-  } else if (newHour > 12 && newHour < 18) {
-    document.getElementById("result").innerText =
-      "Good afternoon " +
-      names +
-      "," +
-      "We are on " +
-      newHour +
-      " PM and You're Approaching to go back at home.";
+const amazina = document.getElementById("izina").value;
+const igisubizo = document.getElementById("result");
+const btn = document.getElementById("buto");
+const amasaha = new Date().getHours();
+btn.onclick = () => {
+  //const amazina1 = amazina.trim();
+  if (amasaha < 4 && amasaha >= 2) {
+    igisubizo.textContent = `Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`;
+    // console.log(`Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`);
   } else {
-    document.getElementById("result").textContent =
-      "Good evening " +
-      names +
-      "," +
-      "We are on " +
-      newHour +
-      " PM and You're Approaching to the time of sleeping.";
+    igisubizo.innerHTML = `Nshuti ${amazina} ubungubu namasaha yakazi, Tukaba turi ${amasaha}.`;
+    console.log(`Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`);
   }
-}
-getHour();
+};
