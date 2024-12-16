@@ -1,14 +1,14 @@
-const amazina = document.getElementById("izina").value;
+const amazina = document.getElementById("userInput");
+amazina.style.color = "green";
 const igisubizo = document.getElementById("result");
-const btn = document.getElementById("buto");
+const btn = document.getElementById("btn");
 const amasaha = new Date().getHours();
-btn.onclick = () => {
-  //const amazina1 = amazina.trim();
+btn.addEventListener("click", getInputValue);
+// const amazina1 = amazina.trim();
+function getInputValue() {
   if (amasaha < 4 && amasaha >= 2) {
-    igisubizo.textContent = `Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`;
-    // console.log(`Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`);
+    igisubizo.textContent = `Urakazaneza ${amazina1.value.trim()}!!, Ubungubu turi ${amasaha} zigicuku.`;
   } else {
-    igisubizo.innerHTML = `Nshuti ${amazina} ubungubu namasaha yakazi, Tukaba turi ${amasaha}.`;
-    console.log(`Urakazaneza ${amazina}!!, Ubungubu turi ${amasaha} zigicuku.`);
+    igisubizo.innerHTML = `Nshuti ${amazina.value.trim()} ubungubu namasaha yakazi, Tukaba turi ${amasaha}.`;
   }
-};
+}
