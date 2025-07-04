@@ -7,30 +7,37 @@
     <title>Document for grid</title>
   </head>
   <body>
-    <h1 id="result">All abount CSS</h1>
-    <label class="label" for="userInput">Injiza izina:</label>
-    <input type="text" id="userInput" placeholder="Enter something" />
-    <button id="btn">Submit</button>
-    <script src="inde.js"></script>
+    <h1 class="result" id="result">All abount CSS</h1>
+    <div id="userInput">
+      <label class="label" for="userInput">Enter name:</label>
+      <input type="text" id="userInput" placeholder="Enter name" />
+      <button id="btn">Submit</button>
+    </div>
 
     <section id="content">
       <div>
-        <h1>I need to learn more abount grid css.</h1>
+        <h1 class="result">I need to learn more abount grid css.</h1>
         <div>
-          <h3>What can I learn abount grid?</h3>
+          <h3 id="subH">What can I learn abount grid?</h3>
           <p>
-            Here are some key concepts and features of CSS Grid that you can learn about:
-            <ul>
-              <li>Grid Container and Grid Items</li>
-              <li>Grid Lines and Grid Tracks</li>
-              <li>Grid Areas</li>
-              <li>Responsive Design with Grid</li>
-              <li>Alignment and Justification</li>
-              <li>Nested Grids</li>
-              <li>Auto-placement and Implicit Grids</li>
+            Here are some key concepts and features of CSS Grid that you can
+            learn about:
           </p>
+          <ul class="grid-list">
+            <li>Grid Container and Grid Items</li>
+            <li>Grid Lines and Grid Tracks</li>
+            <li>Grid Areas</li>
+            <li>Responsive Design with Grid</li>
+            <li>Alignment and Justification</li>
+            <li>Nested Grids</li>
+            <li>Auto-placement and Implicit Grids</li>
+            <li>Grid Functions and Values</li>
+            <li>Media Queries with Grid</li>
+          </ul>
         </div>
       </div>
     </section>
+
+    <script src="inde.js"></script>
   </body>
 </html>
